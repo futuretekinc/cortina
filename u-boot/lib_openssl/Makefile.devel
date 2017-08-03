@@ -1,0 +1,242 @@
+optlevel	= s
+debug		= -g
+CROSS		= arm-openwrt-linux-uclibcgnueabi-
+CC		= ${CROSS}gcc
+AR		= ${CROSS}ar
+OBJCOPY		= ${CROSS}objcopy
+
+LIBGCC		= -L/auto/project2/sw/toolchains/g2-openwrt-2.6.32-v2/usr/lib/gcc/arm-openwrt-linux-uclibcgnueabi/4.3.3/ -lgcc
+
+KEYSRC		= ${HOME}/backup/everify/everify-20101213.162704
+
+ZCPUFLAGS?=\
+	-marm \
+	-march=armv5te \
+	-mtune=xscale \
+	-funit-at-a-time \
+	-msoft-float \
+	-fomit-frame-pointer
+
+#CPUFLAGS?=\
+#	-D__ARM__ \
+#	-mthumb \
+#	-mthumb-interwork \
+#	-funit-at-a-time \
+#	-msoft-float \
+#	-fomit-frame-pointer
+
+CPUFLAGS?=\
+	-mcpu=cortex-a9 \
+	-march=armv7-a \
+	-mthumb \
+	-mthumb-interwork \
+	-funit-at-a-time \
+	-msoft-float \
+	-fomit-frame-pointer
+
+#CPUFLAGS?=\
+#	-D__ARM__ \
+#	-mthumb \
+#	-msoft-float \
+#	-funit-at-a-time \
+#	-fomit-frame-pointer \
+
+LIB	= ossl
+
+INCLUDES=\
+
+CFLAGS=\
+	-I. \
+	-Ibn \
+	-Iec \
+	-Ierr \
+	-Iasn1 \
+	-Iecdsa \
+	-Iinclude \
+	-Wimplicit \
+	-Wuninitialized \
+	-Wundef \
+	-Wunknown-pragmas \
+	-Wunused \
+	-Wpointer-arith \
+	-Wstrict-prototypes \
+	-Winline \
+	-Wall \
+	-fno-builtin \
+	-ffunction-sections \
+	-fdata-sections \
+	-fno-exceptions \
+	-O${optlevel} \
+	${debug}
+
+HFILES=\
+	asn1/asn1.h \
+	bn/bn.h \
+	bn/bn_lcl.h \
+	bn/bn_prime.h \
+	ec/ec.h \
+	ec/ec_lcl.h \
+	ecdsa/ecdsa.h \
+	ecdsa/ecs_locl.h \
+	err/err.h \
+	include/crypto.h \
+	include/md32_common.h \
+	include/obj_mac.h \
+	include/ossl_typ.h \
+	include/safestack.h \
+	include/secboot-ossl.h \
+	include/sha.h \
+	include/stack.h \
+	tools/define.h \
+	tools/g2.h \
+	ossl-api.h \
+
+LDFLAGS=\
+	-L \
+	-Wl,--gc-sections \
+	-nostdlib \
+
+.SUFFIXES: .c .o .a
+.c.o:
+	${CC} ${CPUFLAGS} ${CFLAGS} -c $< -o ${<:%.c=%.o}
+
+openssl_csrcs=\
+	ecdsa/ecs_ossl.c \
+	ec/ec_lib.c \
+	ec/ec_mult.c \
+	ec/ec_key.c \
+	ec/ec_curve.c \
+	ec/ec_cvt.c \
+	ec/ecp_nist.c \
+	ec/ecp_smpl.c \
+	ec/ecp_mont.c \
+	ec/ec2_smpl.c \
+	ec/ec2_mult.c \
+	ec/ec_asn1.c \
+	bn/bn_lib.c \
+	bn/bn_add.c \
+	bn/bn_shift.c \
+	bn/bn_sqr.c \
+	bn/bn_rand.c \
+	bn/bn_mod.c \
+	bn/bn_nist.c \
+	bn/bn_gf2m.c \
+	bn/bn_gcd.c \
+	bn/bn_word.c \
+	bn/bn_sqrt.c \
+	bn/bn_mul.c \
+	bn/bn_mont.c \
+	bn/bn_kron.c \
+	bn/bn_div.c \
+	bn/bn_ctx.c \
+	bn/bn_exp.c \
+	bn/bn_recp.c \
+	bn/bn_asm.c \
+	bn/bn_print.c \
+	sha/sha256.c \
+	lib.c \
+
+openssl_objs=${openssl_csrcs:%.c=%.o}
+
+all: lib${LIB}.a
+
+clean:
+	rm -f ${openssl_objs} lib${LIB}.a libstart.o
+	rm -f ecdsatest.o ecdsatest ecdsatest.elf ecdsatest.bin
+	rm -f ev ev.nm ev.bin ev.bin.gz
+	rm -f s2v s2v.nm s2v.bin s2v.bin.gz
+	rm -f ztest ztest.nm ztest.bin ztest.bin.gz
+	rm -f evlib evlib.nm evlib.bin evlib.bin.deflated deflated_ecdsa.c
+	rm -f evmin evmin.nm evmin.bin evmin.bin.gz
+	rm -f deflate inflate
+
+lib${LIB}.a: ${openssl_objs}
+	${AR} ru lib${LIB}.a ${openssl_objs}
+
+ev:: all keys everify/everify.c
+	${CC} ${CPUFLAGS} ${CFLAGS} -Ikeys ${LDFLAGS} -e main -o ev everify/everify.c -static -L. -lossl ${LIBGCC}
+	${CROSS}nm -f bsd -S --size-sort ev > ev.nm
+	${CROSS}size ev
+	${CROSS}objcopy --strip-all -O binary ev ev.bin
+	gzip -9 < ev.bin > ev.bin.gz
+	ls -l ev.bin ev.bin.gz
+
+evlib: lib${LIB}.a libstart.o deflate evlib.ld
+	${CC} ${CPUFLAGS} ${CFLAGS} ${LDFLAGS} -Tevlib.ld -o evlib -static -L. -lossl ${LIBGCC}
+	${CROSS}nm -f bsd -S --size-sort evlib > evlib.nm
+	${CROSS}size evlib
+	${CROSS}objcopy --strip-all -O binary evlib evlib.bin
+	rm -f evlib.bin.deflated deflated_ecdsa.c
+	./deflate -i evlib.bin -o evlib.bin.deflated
+	./deflate -i evlib.bin -c deflated_ecdsa -o deflated_ecdsa.c
+	ls -l evlib.bin evlib.bin.deflated
+
+evmin:: all everify/evmin.c
+	${CC} ${CPUFLAGS} ${CFLAGS} -Ikeys ${LDFLAGS} -e main -o evmin everify/evmin.c everify/libmin.c -static -L. -lossl ${LIBGCC}
+	${CROSS}nm -f bsd -S --size-sort evmin > evmin.nm
+	${CROSS}size evmin
+	${CROSS}objcopy --strip-all -O binary evmin evmin.bin
+	gzip -9 < evmin.bin > evmin.bin.gz
+	ls -l evmin.bin evmin.bin.gz
+
+keys::
+	mkdir -p keys
+	cp ${KEYSRC}/*-signature.c keys
+	cp ${KEYSRC}/*-pub-raw.c keys
+
+
+s2v: all everify/sha256verify.c
+	${CC} ${CPUFLAGS} ${CFLAGS} ${LDFLAGS} -e main -o s2v everify/sha256verify.c -static -L. -lossl ${LIBGCC}
+	${CROSS}nm -f bsd -S --size-sort s2v > s2v.nm
+	${CROSS}size s2v
+	${CROSS}objcopy --strip-all -O binary s2v s2v.bin
+	gzip < s2v.bin > s2v.bin.gz
+	ls -l s2v.bin s2v.bin.gz
+
+ztest: all everify/ztest.c
+	${CC} ${ZCPUFLAGS} ${CFLAGS} ${LDFLAGS} -e main -o ztest everify/ztest.c -static -L. -lc ${LIBGCC}
+	${CROSS}nm -f bsd -S --size-sort ztest > ztest.nm
+	${CROSS}size ztest
+	${CROSS}objcopy --strip-all -O binary ztest ztest.bin
+	gzip < ztest.bin > ztest.bin.gz
+	ls -l ztest.bin ztest.bin.gz
+
+deflate::
+	make -f Makefile.x86 deflate
+
+libstart.o: libstart.c $(HFILES)
+ecdsa/ecs_ossl.o: ecdsa/ecs_ossl.c $(HFILES)
+ec/ec_lib.o: ec/ec_lib.c $(HFILES)
+ec/ec_mult.o: ec/ec_mult.c $(HFILES)
+ec/ec_key.o: ec/ec_key.c $(HFILES)
+ec/ec_curve.o: ec/ec_curve.c $(HFILES)
+ec/ec_cvt.o: ec/ec_cvt.c $(HFILES)
+ec/ecp_nist.o: ec/ecp_nist.c $(HFILES)
+ec/ecp_smpl.o: ec/ecp_smpl.c $(HFILES)
+ec/ecp_mont.o: ec/ecp_mont.c $(HFILES)
+ec/ec2_smpl.o: ec/ec2_smpl.c $(HFILES)
+ec/ec2_mult.o: ec/ec2_mult.c $(HFILES)
+ec/ec_asn1.o: ec/ec_asn1.c $(HFILES)
+bn/bn_lib.o: bn/bn_lib.c $(HFILES)
+bn/bn_add.o: bn/bn_add.c $(HFILES)
+bn/bn_shift.o: bn/bn_shift.c $(HFILES)
+bn/bn_sqr.o: bn/bn_sqr.c $(HFILES)
+bn/bn_rand.o: bn/bn_rand.c $(HFILES)
+bn/bn_mod.o: bn/bn_mod.c $(HFILES)
+bn/bn_nist.o: bn/bn_nist.c $(HFILES)
+bn/bn_gf2m.o: bn/bn_gf2m.c $(HFILES)
+bn/bn_gcd.o: bn/bn_gcd.c $(HFILES)
+bn/bn_word.o: bn/bn_word.c $(HFILES)
+bn/bn_sqrt.o: bn/bn_sqrt.c $(HFILES)
+bn/bn_mul.o: bn/bn_mul.c $(HFILES)
+bn/bn_mont.o: bn/bn_mont.c $(HFILES)
+bn/bn_kron.o: bn/bn_kron.c $(HFILES)
+bn/bn_div.o: bn/bn_div.c $(HFILES)
+bn/bn_ctx.o: bn/bn_ctx.c $(HFILES)
+bn/bn_exp.o: bn/bn_exp.c $(HFILES)
+bn/bn_recp.o: bn/bn_recp.c $(HFILES)
+bn/bn_asm.o: bn/bn_asm.c $(HFILES)
+bn/bn_print.o: bn/bn_print.c $(HFILES)
+sha/sha256.o: sha/sha256.c $(HFILES)
+zlib/zlib.o: zlib/zlib.c $(HFILES)
+lib.o: lib.c $(HFILES)

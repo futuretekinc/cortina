@@ -1,0 +1,51 @@
+MEMORY 
+{
+   rom : ORIGIN = 0xf6a00000, LENGTH = 64*1024
+   ram : ORIGIN = 0xf6a20000, LENGTH = 64*1024
+
+}
+
+SECTIONS 
+{
+   . = 0;
+   startup : { *(.startup)} >rom
+
+   prog : 
+   {
+      *(.text)
+      *(.rodata)
+      *(.rodata*)
+      *(.glue_7)
+      *(.glue_7t)
+   } >rom
+
+   __end_of_text__ = .;
+
+   .data : 
+   {
+      __data_beg__ = .;
+      __data_beg_src__ = __end_of_text__;
+      *(.data)
+      __data_end__ = .;
+   } >ram
+
+   .bss : 
+   {
+      __bss_beg__ = .;
+      *(.bss)
+   } >ram
+
+	/*
+	.fixup		0xf6a00000	:	{ . = . ; *(.fixup) }
+	*/
+	
+	
+   /* Align here to ensure that the .bss section occupies space up to
+   _end.  Align after .bss to ensure correct alignment even if the
+   .bss section disappears because there are no input sections.  */
+   . = ALIGN(32 / 8);
+}
+   . = ALIGN(32 / 8);
+   _end = .;
+   _bss_end__ = . ; __bss_end__ = . ; __end__ = . ;
+   PROVIDE (end = .);

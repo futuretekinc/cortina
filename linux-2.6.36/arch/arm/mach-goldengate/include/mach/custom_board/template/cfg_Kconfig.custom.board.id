@@ -1,0 +1,25 @@
+config FTM_100S
+       bool "FutureTek's FTM-100S"
+       help
+         FTG-100S (WAN X 1, LAN X 4, WiFi X 1, LTE X 2)
+
+config FTG_1000
+       bool "FutureTek's FTG-1000"
+       help
+         FTG-1000 (WAN X 2, LAN X 8, WiFi X 3)
+
+config FTM_NICO2
+       bool "NICO's embedded Ethernet to LTE Router"
+       help
+         FTG-1000 (WAN X 2, LAN X 8, WiFi X 3)
+
+config FTW_1000
+       bool "FutureSystem's WIPS Sensor"
+       help
+         FTW-1000 (WAN X 1, WiFi X 3)
+
+config FTW_1000_V2
+       bool "FutureSystem's WIPS Sensor with TPM"
+       help
+         FTW-1000 (WAN X 1, WiFi X 3) with TPM
+

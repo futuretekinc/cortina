@@ -1,0 +1,15 @@
+Package: u-boot
+Version: 2009.11-1
+Depends: gen_post_uboot_bin, uboot-flashbin-setenv, ecdsa-tools
+Provides: 
+Source: feeds/cortina/g2-u-boot-2009.11
+Section: utils
+Category: Utilities
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: g2
+Installed-Size: 104
+Title: u-boot for booting the board
+Description:  u-boot for booting the board

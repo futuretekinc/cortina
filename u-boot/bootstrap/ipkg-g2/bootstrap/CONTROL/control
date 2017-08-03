@@ -1,0 +1,15 @@
+Package: bootstrap
+Version: 0.99-1
+Depends: 
+Provides: 
+Source: feeds/cortina/bootstrap
+Section: utils
+Category: Utilities
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: g2
+Installed-Size: 105
+Title: Cortina Systems bootstrap
+Description:  Cortina Systems bootstrap

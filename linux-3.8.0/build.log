@@ -1,0 +1,386 @@
+arch/arm/common/gic.c: In function 'gic_init_bases':
+arch/arm/common/gic.c:672:26: warning: unused variable 'i'
+arch/arm/common/gic.c: At top level:
+arch/arm/common/gic.c:350:11: warning: 'gic_get_cpumask' defined but not used
+arch/arm/mach-goldengate/core.c: In function 'timer_set_mode':
+arch/arm/mach-goldengate/core.c:108:13: warning: unused variable 'remove_timer_irq'
+arch/arm/mach-goldengate/core.c: In function 'goldengate_clock_init':
+arch/arm/mach-goldengate/core.c:250:1: warning: multi-line comment
+In file included from arch/arm/mach-goldengate/include/mach/debug_print.h:4:0,
+                 from arch/arm/mach-goldengate/cortina-g2.c:66:
+arch/arm/mach-goldengate/include/mach/uncompress.h:32:20: warning: conflicting types for built-in function 'putc'
+arch/arm/mach-goldengate/cortina-g2.c:767:30: warning: 'i2c_board_infos' defined but not used
+arch/arm/mach-goldengate/cortina-g2.c:862:30: warning: 'spi_board_infos' defined but not used
+arch/arm/mach-goldengate/cortina-g2.c:1234:12: warning: 'g2_rw_dmamask' defined but not used
+arch/arm/mach-goldengate/cortina-g2.c:1257:12: warning: 'g2_pcie_1_dmamask' defined but not used
+arch/arm/mach-goldengate/platsmp.c: In function 'goldengate_boot_secondary':
+arch/arm/mach-goldengate/platsmp.c:125:24: warning: initialization makes pointer from integer without a cast
+arch/arm/mach-goldengate/platsmp.c:125:2: warning: ISO C90 forbids mixed declarations and code
+arch/arm/mach-goldengate/hotplug.c: In function 'cpu_leave_lowpower':
+arch/arm/mach-goldengate/hotplug.c:52:8: warning: assignment makes pointer from integer without a cast
+arch/arm/mach-goldengate/hotplug.c: In function 'platform_do_lowpower':
+arch/arm/mach-goldengate/hotplug.c:76:8: warning: assignment makes pointer from integer without a cast
+In file included from arch/arm/mach-goldengate/pcie.c:21:0:
+arch/arm/mach-goldengate/include/mach/hardware.h:36:0: warning: "PCIBIOS_MIN_IO" redefined
+/home/xtra/Work/Cortina/linux-3.8.0/arch/arm/include/asm/pci.h:11:0: note: this is the location of the previous definition
+arch/arm/mach-goldengate/include/mach/hardware.h:37:0: warning: "PCIBIOS_MIN_MEM" redefined
+/home/xtra/Work/Cortina/linux-3.8.0/arch/arm/include/asm/pci.h:13:0: note: this is the location of the previous definition
+In file included from arch/arm/mach-goldengate/pcie.c:43:0:
+arch/arm/mach-goldengate/sb_phy.c: In function 'sb_phy_program_24mhz':
+arch/arm/mach-goldengate/sb_phy.c:33:17: warning: format '%x' expects type 'unsigned int', but argument 3 has type 'void *'
+arch/arm/mach-goldengate/sb_phy.c: In function 'sb_phy_program_100mhz':
+arch/arm/mach-goldengate/sb_phy.c:112:17: warning: format '%x' expects type 'unsigned int', but argument 3 has type 'void *'
+arch/arm/mach-goldengate/sb_phy.c: In function 'sb_phy_init':
+arch/arm/mach-goldengate/sb_phy.c:342:6: warning: unused variable 'port_number'
+arch/arm/mach-goldengate/sb_phy.c:341:15: warning: unused variable 'phymap'
+arch/arm/mach-goldengate/pcie.c: At top level:
+arch/arm/mach-goldengate/pcie.c:1606:10: warning: initialization from incompatible pointer type
+arch/arm/mach-goldengate/pcie.c: In function 'g2_pcie_preinit':
+arch/arm/mach-goldengate/pcie.c:1613:15: warning: unused variable 'reg_offset'
+arch/arm/mach-goldengate/pcie.c:1612:15: warning: unused variable 'temp'
+arch/arm/mach-goldengate/pcie.c:1611:9: warning: unused variable 'ret'
+arch/arm/mach-goldengate/pcie.c: At top level:
+arch/arm/mach-goldengate/pcie.c:1952:1: warning: initialization from incompatible pointer type
+arch/arm/mach-goldengate/pcie.c:339:12: warning: 'pcie_find_irq_by_device_and_interrupt_pin' defined but not used
+In file included from arch/arm/mach-goldengate/pcie.c:43:0:
+arch/arm/mach-goldengate/sb_phy.c: In function 'sb_phy_program_24mhz':
+arch/arm/mach-goldengate/sb_phy.c:4:15: warning: 'value' may be used uninitialized in this function
+arch/arm/mach-goldengate/sb_phy.c: In function 'sb_phy_program_100mhz':
+arch/arm/mach-goldengate/sb_phy.c:87:18: warning: 'value' may be used uninitialized in this function
+arch/arm/mach-goldengate/pcie.c: In function 'g2_pcie_irq':
+arch/arm/mach-goldengate/pcie.c:1311:16: warning: 'interrupt_pin' may be used uninitialized in this function
+crypto/tcrypt.c: In function 'test_aead_speed':
+crypto/tcrypt.c:606:8: warning: passing argument 1 of 'ahash_request_set_callback' from incompatible pointer type
+include/crypto/hash.h:239:20: note: expected 'struct ahash_request *' but argument is of type 'struct aead_request *'
+crypto/tcrypt.c:620:5: warning: ISO C90 forbids mixed declarations and code
+crypto/tcrypt.c:636:5: warning: initialization discards qualifiers from pointer target type
+crypto/tcrypt.c:649:6: warning: initialization discards qualifiers from pointer target type
+crypto/tcrypt.c:654:5: warning: initialization discards qualifiers from pointer target type
+crypto/tcrypt.c:671:5: warning: ISO C90 forbids mixed declarations and code
+crypto/tcrypt.c:683:5: warning: passing argument 5 of 'aead_request_set_crypt' discards qualifiers from pointer target type
+include/linux/crypto.h:852:20: note: expected 'u8 *' but argument is of type 'const char *'
+crypto/tcrypt.c:696:5: warning: passing argument 5 of 'aead_request_set_crypt' discards qualifiers from pointer target type
+include/linux/crypto.h:852:20: note: expected 'u8 *' but argument is of type 'const char *'
+crypto/tcrypt.c:562:21: warning: unused variable 'sg'
+crypto/tcrypt.c:560:14: warning: unused variable 'key'
+crypto/tcrypt.c:559:23: warning: unused variable 'j'
+crypto/tcrypt.c: In function 'test_hash_speed':
+crypto/tcrypt.c:487:1: warning: the frame size of 1128 bytes is larger than 1024 bytes
+crypto/tcrypt.c: In function 'test_ahash_speed.clone.8':
+crypto/tcrypt.c:934:1: warning: the frame size of 1152 bytes is larger than 1024 bytes
+drivers/char/cs75xx_ipc_re.c: In function 'g2_ipc_init':
+drivers/char/cs75xx_ipc_re.c:898:2: warning: initialization makes pointer from integer without a cast
+drivers/char/cs75xx_ipc_re.c:899:28: warning: assignment makes integer from pointer without a cast
+drivers/char/cs75xx_ipc_re.c:901:28: warning: assignment makes integer from pointer without a cast
+drivers/char/cs75xx_ipc_re.c: In function 'g2_ipc_exit':
+drivers/char/cs75xx_ipc_re.c:940:3: warning: passing argument 1 of '__arm_iounmap' makes pointer from integer without a cast
+/home/xtra/Work/Cortina/linux-3.8.0/arch/arm/include/asm/io.h:149:13: note: expected 'volatile void *' but argument is of type 'ulong'
+drivers/char/cs75xx_ipc_re.c:941:3: warning: passing argument 1 of '__arm_iounmap' makes pointer from integer without a cast
+/home/xtra/Work/Cortina/linux-3.8.0/arch/arm/include/asm/io.h:149:13: note: expected 'volatile void *' but argument is of type 'ulong'
+drivers/char/cs75xx_ipc_wfo.c: In function 'register_updateSC_callback':
+drivers/char/cs75xx_ipc_wfo.c:307:22: warning: assignment from incompatible pointer type
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c: In function 'cs75xx_spacc_rng_reset':
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:100:3: warning: passing argument 2 of 'trng_reseed_nonce' from incompatible pointer type
+drivers/char/hw_random/cs75xx-rng/include/elptrng.h:104:9: note: expected 'uint32_t *' but argument is of type 'u8 *'
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c: In function 'cs75xx_spacc_rng_alg_register':
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:130:3: warning: return makes integer from pointer without a cast
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:146:2: warning: ISO C90 forbids mixed declarations and code
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:124:6: warning: unused variable 'i'
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c: In function 'cs75xx_hwrng_data_present':
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:165:22: warning: unused variable 'trng'
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c: In function 'cs75xx_sha1':
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:268:3: warning: ISO C90 forbids mixed declarations and code
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:275:12: warning: assignment discards qualifiers from pointer target type
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:285:3: warning: ISO C90 forbids mixed declarations and code
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:313:3: warning: ISO C90 forbids mixed declarations and code
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:252:12: warning: unused variable 'hash_value'
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:250:25: warning: unused variable 'count'
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:250:7: warning: unused variable 'src_fd'
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c: In function 'cs75xx_seed_gen':
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:333:19: warning: assignment makes pointer from integer without a cast
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:334:19: warning: assignment makes pointer from integer without a cast
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:335:19: warning: assignment makes pointer from integer without a cast
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:336:19: warning: assignment makes pointer from integer without a cast
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:337:18: warning: assignment makes pointer from integer without a cast
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:338:23: warning: assignment makes pointer from integer without a cast
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:339:23: warning: assignment makes pointer from integer without a cast
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:365:3: warning: ISO C90 forbids mixed declarations and code
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:379:3: warning: passing argument 1 of 'cs75xx_sha1' from incompatible pointer type
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:248:6: note: expected 'uint8_t *' but argument is of type 'uint32_t *'
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:379:3: warning: passing argument 2 of 'cs75xx_sha1' from incompatible pointer type
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:248:6: note: expected 'char *' but argument is of type 'uint32_t *'
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:380:6: warning: ISO C90 forbids mixed declarations and code
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:385:3: warning: too few arguments for format
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:388:3: warning: ISO C90 forbids mixed declarations and code
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c: In function 'cs75xx_trng_probe':
+drivers/char/hw_random/cs75xx-rng/cs75xx-trng.c:467:7: warning: assignment makes pointer from integer without a cast
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c: In function 'write_rng':
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c:115:21: warning: unused variable 'offset'
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c:113:6: warning: unused variable 'ret'
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c:112:9: warning: unused variable 'j'
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c: In function 'print_batch_rng':
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c:141:21: warning: unused variable 'offset'
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c:139:6: warning: unused variable 'ret'
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c: In function 'cs75xx_trng_diag':
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c:255:2: warning: ISO C90 forbids mixed declarations and code
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c: At top level:
+drivers/char/hw_random/cs75xx-rng/tools/trngdiag/cs75xx-trngdiag.c:109:16: warning: 'write_rng' defined but not used
+drivers/dma/cs75xx_adma.c: In function 'cs75xx_dma_alloc_chan_resources':
+drivers/dma/cs75xx_adma.c:344:6: warning: assignment makes pointer from integer without a cast
+drivers/dma/cs75xx_adma.c: At top level:
+drivers/dma/cs75xx_adma.c:658:12: warning: 'cs75xx_dma_remove' defined but not used
+In file included from drivers/gpio/cs75xx-gpio.c:24:0:
+arch/arm/mach-goldengate/include/mach/gpio.h:22:0: warning: "gpio_to_irq" redefined
+/home/xtra/Work/Cortina/linux-3.8.0/arch/arm/include/asm/gpio.h:29:0: note: this is the location of the previous definition
+drivers/gpio/cs75xx-gpio.c: In function 'cs75xx_gpio_free':
+drivers/gpio/cs75xx-gpio.c:205:2: warning: 'return' with a value, in function returning void
+drivers/gpio/cs75xx-gpio.c: At top level:
+drivers/gpio/cs75xx-gpio.c:52:12: warning: 'cs75xx_gpio_pin' defined but not used
+drivers/mmc/host/cs752x_sd.c:302:13: warning: 'cs752x_dbg_dumpcmd' defined but not used
+drivers/mtd/nand/cs752x_nand.c: In function 'cs752x_nand_write_page_raw':
+drivers/mtd/nand/cs752x_nand.c:2115:10: warning: comparison of distinct pointer types lacks a cast
+drivers/mtd/nand/cs752x_nand.c:2129:8: warning: assignment discards qualifiers from pointer target type
+drivers/mtd/nand/cs752x_nand.c:2131:2: warning: passing argument 1 of 'memcpy' discards qualifiers from pointer target type
+/home/xtra/Work/Cortina/linux-3.8.0/arch/arm/include/asm/string.h:16:15: note: expected 'void *' but argument is of type 'const uint8_t *'
+drivers/mtd/nand/cs752x_nand.c:2155:7: warning: assignment makes integer from pointer without a cast
+drivers/mtd/nand/cs752x_nand.c: In function 'cs752x_nand_read_page':
+drivers/mtd/nand/cs752x_nand.c:2405:10: warning: comparison of distinct pointer types lacks a cast
+drivers/mtd/nand/cs752x_nand.c: In function 'cs752x_nand_write_page_hwecc':
+drivers/mtd/nand/cs752x_nand.c:2992:10: warning: comparison of distinct pointer types lacks a cast
+drivers/mtd/nand/cs752x_nand.c:3006:8: warning: assignment discards qualifiers from pointer target type
+drivers/mtd/nand/cs752x_nand.c:3008:2: warning: passing argument 1 of 'memcpy' discards qualifiers from pointer target type
+/home/xtra/Work/Cortina/linux-3.8.0/arch/arm/include/asm/string.h:16:15: note: expected 'void *' but argument is of type 'const uint8_t *'
+drivers/mtd/nand/cs752x_nand.c: In function 'cs752x_nand_read_page_hwecc':
+drivers/mtd/nand/cs752x_nand.c:3347:2: warning: ISO C90 forbids mixed declarations and code
+drivers/mtd/nand/cs752x_nand.c:3262:12: warning: unused variable 'addr'
+drivers/mtd/nand/cs752x_nand.c: In function 'cs752x_nand_scan_tail':
+drivers/mtd/nand/cs752x_nand.c:3615:24: warning: assignment from incompatible pointer type
+drivers/mtd/nand/cs752x_nand.c:3617:28: warning: assignment from incompatible pointer type
+drivers/mtd/nand/cs752x_nand.c:3618:22: warning: assignment from incompatible pointer type
+drivers/mtd/nand/cs752x_nand.c: In function 'cs752x_nand_probe':
+drivers/mtd/nand/cs752x_nand.c:5130:6: warning: unused variable 'nr_partitions'
+drivers/mtd/nand/cs752x_nand.c:5128:8: warning: unused variable 'part_type'
+drivers/mtd/nand/cs752x_nand.c: At top level:
+drivers/mtd/nand/cs752x_nand.c:77:12: warning: 'cs752x_oob_config_size' defined but not used
+drivers/mtd/nand/cs752x_nand.c:88:30: warning: 'mtd_parts' defined but not used
+drivers/mtd/nand/cs752x_nand.c:89:20: warning: 'probes' defined but not used
+drivers/mtd/nand/cs752x_nand.c:4259:13: warning: 'cs752x_nand_command_lp' defined but not used
+drivers/net/ethernet/cs752x/src/core/cs_vtable.c: In function 'cs_vtable_set_def_action':
+drivers/net/ethernet/cs752x/src/core/cs_vtable.c:184:35: warning: unused variable 'um_voqpol_idx'
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_qos.c:121:8: warning: type defaults to 'int' in declaration of 'cs_hw_accel_mgr_delete_flow_based_hash_entry'
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_qos.c:121:1: warning: function declaration isn't a prototype
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_qos.c: In function 'cs_qos_get_voq_id':
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_qos.c:149:10: warning: unused variable 'proto_type'
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_qos.c:148:25: warning: unused variable 'vlan_eth_hdr'
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_qos.c:147:20: warning: unused variable 'eth'
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_qos.c:146:19: warning: unused variable 'iph'
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_iplip.c:96:6: warning: function declaration isn't a prototype
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_iplip.c:103:6: warning: function declaration isn't a prototype
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_iplip.c: In function 'cs_proc_iplip_util_read_proc':
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_iplip.c:145:20: warning: unused variable 'mib_counter'
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_iplip.c: In function 'cs_proc_iplip_currccount_read_proc':
+drivers/net/ethernet/cs752x/src/diagnostic/cs752x_proc_iplip.c:161:20: warning: unused variable 'mib_counter'
+drivers/net/ethernet/cs752x/src/fe/table/cs_fe_table_acl.c:1237:13: warning: '_fe_acl_print_entry' defined but not used
+drivers/net/ethernet/cs752x/src/kernel_adapt/ipsec/cs_hw_accel_ipsec.c:2460:2: warning: initialization from incompatible pointer type
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: In function 'cs_proc_l2_mcast_address_add_write_proc':
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%x' expects type 'unsigned int *', but argument 3 has type 'cs_port_id_t *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%d' expects type 'int *', but argument 4 has type 'cs_port_id_t *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%d' expects type 'int *', but argument 5 has type 'enum cs_ip_afi_t *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%d' expects type 'int *', but argument 6 has type 'cs_uint16 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%d' expects type 'int *', but argument 7 has type 'cs_uint16 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%d' expects type 'int *', but argument 9 has type 'enum cs_mcast_filter_mode *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%x' expects type 'unsigned int *', but argument 10 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%x' expects type 'unsigned int *', but argument 11 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%x' expects type 'unsigned int *', but argument 12 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%x' expects type 'unsigned int *', but argument 13 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%x' expects type 'unsigned int *', but argument 14 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%x' expects type 'unsigned int *', but argument 15 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:201:3: warning: format '%d' expects type 'int *', but argument 16 has type 'cs_uint16 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: In function 'cs_proc_l2_mcast_address_del_write_proc':
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%x' expects type 'unsigned int *', but argument 3 has type 'cs_port_id_t *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%d' expects type 'int *', but argument 4 has type 'cs_port_id_t *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%d' expects type 'int *', but argument 5 has type 'enum cs_ip_afi_t *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%d' expects type 'int *', but argument 6 has type 'cs_uint16 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%d' expects type 'int *', but argument 7 has type 'cs_uint16 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%d' expects type 'int *', but argument 9 has type 'enum cs_mcast_filter_mode *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%x' expects type 'unsigned int *', but argument 10 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%x' expects type 'unsigned int *', but argument 11 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%x' expects type 'unsigned int *', but argument 12 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%x' expects type 'unsigned int *', but argument 13 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%x' expects type 'unsigned int *', but argument 14 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%x' expects type 'unsigned int *', but argument 15 has type 'cs_uint8 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:290:3: warning: format '%d' expects type 'int *', but argument 16 has type 'cs_uint16 *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: In function 'cs_l2_mcast_port_address_get_write_proc':
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:390:2: warning: passing argument 3 of 'kstrtoul' from incompatible pointer type
+include/linux/kernel.h:242:32: note: expected 'long unsigned int *' but argument is of type 'cs_port_id_t *'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: In function 'cs_l2_mcast_port_address_clear_write_proc':
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:453:2: warning: format '%d' expects type 'int', but argument 2 has type 'long unsigned int'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:461:2: warning: too many arguments for format
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: In function 'cs_l2_mcast_address_all_clear_write_proc':
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:493:2: warning: too many arguments for format
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: In function 'cs_l2_mcast_mode_set_write_proc':
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:514:2: warning: format '%d' expects type 'int', but argument 3 has type 'long unsigned int'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:522:2: warning: too many arguments for format
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: In function 'cs_l2_mcast_wan_port_set_write_proc':
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:543:2: warning: format '%d' expects type 'int', but argument 3 has type 'long unsigned int'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:551:22: warning: unknown escape sequence: '\040'
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:551:2: warning: too many arguments for format
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: At top level:
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:556:12: warning: 'cs_l2_mcast_wan_port_set_read_proc' defined but not used
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: In function 'cs_proc_l2_mcast_address_del_write_proc':
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:347:1: warning: the frame size of 1200 bytes is larger than 1024 bytes
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c: In function 'cs_proc_l2_mcast_address_add_write_proc':
+drivers/net/ethernet/cs752x/src/kernel_adapt/multicast/cs_proc_mcast.c:258:1: warning: the frame size of 1200 bytes is larger than 1024 bytes
+drivers/net/ethernet/cs752x/src/kernel_adapt/netfilter/cs_hw_accel_forward.c: In function 'cs_forward_ipv4_nf_mark_swonly':
+drivers/net/ethernet/cs752x/src/kernel_adapt/netfilter/cs_hw_accel_forward.c:917:16: warning: unused variable 'iph'
+drivers/net/ethernet/cs752x/src/kernel_adapt/cs_hw_accel_manager.c: In function 'cs_proc_node_iplip_pe_cmd_write':
+drivers/net/ethernet/cs752x/src/kernel_adapt/cs_hw_accel_manager.c:1304:3: warning: passing argument 3 of 'kstrtoul' from incompatible pointer type
+include/linux/kernel.h:242:32: note: expected 'long unsigned int *' but argument is of type 'unsigned char *'
+drivers/net/ethernet/cs752x/src/ni/cs75xx_pni.c: In function 'cs_pni_register_chip_callback_xmit':
+drivers/net/ethernet/cs752x/src/ni/cs75xx_pni.c:92:27: warning: assignment from incompatible pointer type
+drivers/net/ethernet/cs752x/src/ni/cs75xx_pni.c:93:33: warning: assignment from incompatible pointer type
+drivers/net/ethernet/cs752x/src/ni/cs75xx_pni.c:95:37: warning: assignment from incompatible pointer type
+drivers/net/ethernet/cs752x/src/ni/cs75xx_pni.c: In function 'cs_pni_register_callback':
+drivers/net/ethernet/cs752x/src/ni/cs75xx_pni.c:126:27: warning: assignment from incompatible pointer type
+drivers/net/ethernet/cs752x/src/ni/cs75xx_pni.c:127:32: warning: assignment from incompatible pointer type
+drivers/net/ethernet/cs752x/src/ni/cs75xx_pni.c:129:37: warning: assignment from incompatible pointer type
+drivers/net/ethernet/cs752x/src/ni/cs752x_eth.c: In function 'cs_ni_alloc_linux_free_buffer':
+drivers/net/ethernet/cs752x/src/ni/cs752x_eth.c:831:18: warning: passing argument 1 of 'dma_map_single_attrs' from incompatible pointer type
+include/asm-generic/dma-mapping-common.h:10:26: note: expected 'struct device *' but argument is of type 'struct net_device *'
+drivers/net/ethernet/cs752x/src/ni/cs752x_eth.c: At top level:
+drivers/net/ethernet/cs752x/src/ni/cs752x_eth.c:5971:2: warning: initialization from incompatible pointer type
+drivers/net/ethernet/cs752x/src/ni/cs752x_eth.c:6853:2: warning: initialization from incompatible pointer type
+drivers/net/ethernet/cs752x/src/ni/cs752x_ioctl.c: In function 'cs_ne_ioctl':
+drivers/net/ethernet/cs752x/src/ni/cs752x_ioctl.c:788:6: warning: passing argument 4 of 'cs_l2tp_session_get' from incompatible pointer type
+arch/arm/mach-goldengate/include/mach/cs_tunnel.h:194:1: note: expected 'enum cs_boolean_t *' but argument is of type 'unsigned char *'
+In file included from drivers/net/ethernet/cs752x/src/ni/cs752x_eth.h:23:0,
+                 from drivers/net/ethernet/cs752x/src/ni/cs752x_proc.c:47:
+arch/arm/mach-goldengate/include/mach/hardware.h:36:0: warning: "PCIBIOS_MIN_IO" redefined
+/home/xtra/Work/Cortina/linux-3.8.0/arch/arm/include/asm/pci.h:11:0: note: this is the location of the previous definition
+arch/arm/mach-goldengate/include/mach/hardware.h:37:0: warning: "PCIBIOS_MIN_MEM" redefined
+/home/xtra/Work/Cortina/linux-3.8.0/arch/arm/include/asm/pci.h:13:0: note: this is the location of the previous definition
+drivers/net/ethernet/cs752x/src/qm/cs75xx_qm.c:26:1: warning: data definition has no type or storage class
+drivers/net/ethernet/cs752x/src/qm/cs75xx_qm.c:26:1: warning: type defaults to 'int' in declaration of 'EXPORT_SYMBOL'
+drivers/net/ethernet/cs752x/src/qm/cs75xx_qm.c:26:1: warning: parameter names (without types) in function declaration
+drivers/net/ethernet/cs752x/src/qm/cs75xx_qm.c:28:1: warning: data definition has no type or storage class
+drivers/net/ethernet/cs752x/src/qm/cs75xx_qm.c:28:1: warning: type defaults to 'int' in declaration of 'EXPORT_SYMBOL'
+drivers/net/ethernet/cs752x/src/qm/cs75xx_qm.c:28:1: warning: parameter names (without types) in function declaration
+drivers/net/ethernet/cs752x/src/qm/cs75xx_qm.c:30:1: warning: data definition has no type or storage class
+drivers/net/ethernet/cs752x/src/qm/cs75xx_qm.c:30:1: warning: type defaults to 'int' in declaration of 'EXPORT_SYMBOL'
+drivers/net/ethernet/cs752x/src/qm/cs75xx_qm.c:30:1: warning: parameter names (without types) in function declaration
+In file included from /home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_api.h:20:0,
+                 from drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:41:
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:57:0: warning: "ntohs" redefined
+include/linux/byteorder/generic.h:141:0: note: this is the location of the previous definition
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:58:0: warning: "ntohl" redefined
+include/linux/byteorder/generic.h:139:0: note: this is the location of the previous definition
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:59:0: warning: "htons" redefined
+include/linux/byteorder/generic.h:140:0: note: this is the location of the previous definition
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:60:0: warning: "htonl" redefined
+include/linux/byteorder/generic.h:138:0: note: this is the location of the previous definition
+In file included from drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:50:0:
+drivers/net/ethernet/realtek/rtl8370/rtl8370_vb.h:17:0: warning: "RTL83XX_DBG" redefined
+<command-line>:0:0: note: this is the location of the previous definition
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:52:0: warning: "DRV_NAME" redefined
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/cs752x/src/ni/cs752x_eth.h:41:0: note: this is the location of the previous definition
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c: In function 'rtl83xx_sw_init':
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:96:18: warning: assignment from incompatible pointer type
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c: In function 'rtl83xx_hw_init':
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:214:22: warning: unused variable 'acl_act'
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:213:19: warning: unused variable 'acl_cfg'
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:212:21: warning: unused variable 'acl_field'
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:211:15: warning: unused variable 'acl_rule_num'
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:209:9: warning: unused variable 'cnt'
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:209:6: warning: unused variable 'i'
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:208:27: warning: unused variable 'portmask2'
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:207:24: warning: unused variable 'svlan_cfg'
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c: At top level:
+drivers/net/ethernet/realtek/rtl8370/rtl8370_main.c:184:12: warning: 'rtl83xx_add_cpu_mac' defined but not used
+In file included from /home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtl8370_asicdrv.h:4:0,
+                 from /home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtl8370_asicdrv_acl.h:4,
+                 from drivers/net/ethernet/realtek/rtl8370/rtk_api.c:21:
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:57:0: warning: "ntohs" redefined
+include/linux/byteorder/generic.h:141:0: note: this is the location of the previous definition
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:58:0: warning: "ntohl" redefined
+include/linux/byteorder/generic.h:139:0: note: this is the location of the previous definition
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:59:0: warning: "htons" redefined
+include/linux/byteorder/generic.h:140:0: note: this is the location of the previous definition
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:60:0: warning: "htonl" redefined
+include/linux/byteorder/generic.h:138:0: note: this is the location of the previous definition
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c: In function 'rtk_vlan_protoAndPortBasedVlan_get':
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c:6122:37: warning: comparison between 'rtl8370_provlan_frametype' and 'rtk_vlan_protoVlan_frameType_t'
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c: In function 'rtk_vlan_protoAndPortBasedVlan_del':
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c:6196:37: warning: comparison between 'rtl8370_provlan_frametype' and 'rtk_vlan_protoVlan_frameType_t'
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c: In function 'rtk_led_blinkRate_set':
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c:12839:19: warning: comparison between 'rtk_led_blink_rate_t' and 'enum RTL8370_LEDBLINKRATE'
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c: In function 'rtk_aldp_init':
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c:15415:19: warning: unused variable 'retVal'
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c: In function '_rtk_switch_init1':
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c:11086:1: warning: the frame size of 1720 bytes is larger than 1024 bytes
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c: In function '_rtk_switch_init2':
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c:11399:1: warning: the frame size of 2536 bytes is larger than 1024 bytes
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c: In function '_rtk_switch_init0':
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c:10825:1: warning: the frame size of 1288 bytes is larger than 1024 bytes
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c: In function 'rtk_port_phyTestMode_set':
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c:3713:1: warning: the frame size of 2424 bytes is larger than 1024 bytes
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c: In function 'rtk_filter_igrAcl_cfg_add':
+drivers/net/ethernet/realtek/rtl8370/rtk_api.c:13636:1: warning: the frame size of 1208 bytes is larger than 1024 bytes
+drivers/net/ethernet/realtek/rtl8370/rtl8370_asicdrv_led.c: In function 'rtl8370_getAsicForceGroupLed':
+drivers/net/ethernet/realtek/rtl8370/rtl8370_asicdrv_led.c:367:9: warning: 'stat' may be used uninitialized in this function
+In file included from drivers/net/ethernet/realtek/rtl8370/smi.c:13:0:
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:57:0: warning: "ntohs" redefined
+include/linux/byteorder/generic.h:141:0: note: this is the location of the previous definition
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:58:0: warning: "ntohl" redefined
+include/linux/byteorder/generic.h:139:0: note: this is the location of the previous definition
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:59:0: warning: "htons" redefined
+include/linux/byteorder/generic.h:140:0: note: this is the location of the previous definition
+/home/xtra/Work/Cortina/linux-3.8.0/drivers/net/ethernet/realtek/rtl8370/rtk_types.h:60:0: warning: "htonl" redefined
+include/linux/byteorder/generic.h:138:0: note: this is the location of the previous definition
+In file included from drivers/net/ethernet/realtek/rtl8370/smi.c:17:0:
+drivers/net/ethernet/realtek/rtl8370/rtl8370_vb.h:17:0: warning: "RTL83XX_DBG" redefined
+<command-line>:0:0: note: this is the location of the previous definition
+drivers/net/ppp/ppp_generic.c: In function 'ppp_shutdown_interface':
+drivers/net/ppp/ppp_generic.c:2764:3: warning: passing argument 1 of 'cs_pppoe_del_hash_hook' from incompatible pointer type
+drivers/net/ppp/ppp_generic.c:288:13: note: expected 'char *' but argument is of type 'struct net_device *'
+drivers/rtc/rtc-cs75xx.c:538:5: warning: "DEBUG" is not defined
+drivers/rtc/rtc-cs75xx.c:45:8: warning: 'g2_rtc_pie_lock' defined but not used
+drivers/usb/host/xhci.c:256:12: warning: 'xhci_setup_msix' defined but not used
+drivers/usb/host/xhci-ring.c: In function 'xhci_irq':
+drivers/usb/host/xhci-ring.c:1580:18: warning: 'hcd' may be used uninitialized in this function
+drivers/watchdog/cs75xx_wdt.c: In function 'g2_wdt_open':
+drivers/watchdog/cs75xx_wdt.c:193:5: warning: passing argument 1 of 'smp_call_function' from incompatible pointer type
+include/linux/smp.h:74:5: note: expected 'smp_call_func_t' but argument is of type 'void (*)(struct g2_wdt *)'
+drivers/watchdog/cs75xx_wdt.c: In function 'g2_wdt_release':
+drivers/watchdog/cs75xx_wdt.c:208:6: warning: passing argument 1 of 'smp_call_function' from incompatible pointer type
+include/linux/smp.h:74:5: note: expected 'smp_call_func_t' but argument is of type 'void (*)(struct g2_wdt *)'
+drivers/watchdog/cs75xx_wdt.c:213:6: warning: passing argument 1 of 'smp_call_function' from incompatible pointer type
+include/linux/smp.h:74:5: note: expected 'smp_call_func_t' but argument is of type 'void (*)(struct g2_wdt *)'
+drivers/watchdog/cs75xx_wdt.c: In function 'g2_wdt_write':
+drivers/watchdog/cs75xx_wdt.c:245:6: warning: passing argument 1 of 'smp_call_function' from incompatible pointer type
+include/linux/smp.h:74:5: note: expected 'smp_call_func_t' but argument is of type 'void (*)(struct g2_wdt *)'
+drivers/watchdog/cs75xx_wdt.c: In function 'g2_wdt_ioctl':
+drivers/watchdog/cs75xx_wdt.c:293:11: warning: passing argument 1 of 'smp_call_function' from incompatible pointer type
+include/linux/smp.h:74:5: note: expected 'smp_call_func_t' but argument is of type 'void (*)(struct g2_wdt *)'
+drivers/watchdog/cs75xx_wdt.c:298:11: warning: passing argument 1 of 'smp_call_function' from incompatible pointer type
+include/linux/smp.h:74:5: note: expected 'smp_call_func_t' but argument is of type 'void (*)(struct g2_wdt *)'
+drivers/watchdog/cs75xx_wdt.c:305:10: warning: passing argument 1 of 'smp_call_function' from incompatible pointer type
+include/linux/smp.h:74:5: note: expected 'smp_call_func_t' but argument is of type 'void (*)(struct g2_wdt *)'
+drivers/watchdog/cs75xx_wdt.c:315:10: warning: passing argument 1 of 'smp_call_function' from incompatible pointer type
+include/linux/smp.h:74:5: note: expected 'smp_call_func_t' but argument is of type 'void (*)(struct g2_wdt *)'
+drivers/watchdog/cs75xx_wdt.c: In function 'g2_wdt_shutdown':
+drivers/watchdog/cs75xx_wdt.c:345:10: warning: passing argument 1 of 'smp_call_function' from incompatible pointer type
+include/linux/smp.h:74:5: note: expected 'smp_call_func_t' but argument is of type 'void (*)(struct g2_wdt *)'
+net/ipv4/ipmr.c: In function 'ipmr_mfc_add':
+net/ipv4/ipmr.c:1113:3: warning: ISO C90 forbids mixed declarations and code
+net/mac80211/tx.c: In function 'ieee80211_subif_start_xmit':
+net/mac80211/tx.c:1752:33: warning: 'chanctx_conf' may be used uninitialized in this function
+net/netfilter/nf_nat_core.c: In function 'nf_nat_setup_info':
+include/linux/jhash.h:137:16: warning: array subscript is above array bounds
+net/sched/sch_multiq.c: In function 'multiq_tune':
+net/sched/sch_multiq.c:312:24: warning: unused variable 'old'
+net/sched/sch_multiq.c:312:16: warning: unused variable 'child'
+net/wireless/nl80211.c: In function 'nl80211_pre_doit':
+net/wireless/nl80211.c:57:6: warning: 'wdev_id' may be used uninitialized in this function
+WARNING: modpost: Found 4 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'

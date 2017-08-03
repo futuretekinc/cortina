@@ -1,0 +1,600 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+sphy_cntl_95        0x4               bsp.a
+denali_cntl_40      0x4               bsp.a
+sphy_cntl_64        0x4               bsp.a
+denali_cntl_46      0x4               bsp.a
+denali_cntl_121     0x4               bsp.a
+denali_cntl_551     0x4               bsp.a
+sphy_cntl_103       0x4               bsp.a
+sphy_cntl_74        0x4               bsp.a
+sphy_cntl_781       0x4               bsp.a
+denali_cntl_251     0x4               bsp.a
+denali_cntl_35      0x4               bsp.a
+sphy_cntl_79        0x4               bsp.a
+denali_cntl_23      0x4               bsp.a
+denali_cntl_131     0x4               bsp.a
+denali_cntl_561     0x4               bsp.a
+denali_cntl_20      0x4               bsp.a
+denali_cntl_33      0x4               bsp.a
+sphy_cntl_67        0x4               bsp.a
+sphy_cntl_691       0x4               bsp.a
+denali_cntl_39      0x4               bsp.a
+denali_cntl_03      0x4               bsp.a
+denali_cntl_22      0x4               bsp.a
+loop_check_cnt      0x4               bsp.a
+denali_cntl_16      0x4               bsp.a
+denali_cntl_59      0x4               bsp.a
+sphy_cntl_77        0x4               bsp.a
+denali_cntl_041     0x4               bsp.a
+denali_cntl_49      0x4               bsp.a
+denali_cntl_08      0x4               bsp.a
+denali_cntl_401     0x4               bsp.a
+sphy_cntl_83        0x4               bsp.a
+denali_cntl_011     0x4               bsp.a
+denali_cntl_30      0x4               bsp.a
+denali_cntl_36      0x4               bsp.a
+denali_cntl_00      0x4               bsp.a
+denali_cntl_321     0x4               bsp.a
+denali_cntl_381     0x4               bsp.a
+sphy_cntl_93        0x4               bsp.a
+denali_cntl_04      0x4               bsp.a
+denali_cntl_06      0x4               bsp.a
+denali_cntl_52      0x4               bsp.a
+sphy_cntl_87        0x4               bsp.a
+denali_cntl_001     0x4               bsp.a
+denali_cntl_361     0x4               bsp.a
+show_type           0x1               bsp.a
+denali_cntl_421     0x4               bsp.a
+denali_cntl_41      0x4               bsp.a
+sphy_cntl_86        0x4               bsp.a
+denali_cntl_211     0x4               bsp.a
+denali_cntl_221     0x4               bsp.a
+denali_cntl_261     0x4               bsp.a
+denali_cntl_351     0x4               bsp.a
+denali_cntl_12      0x4               bsp.a
+denali_cntl_55      0x4               bsp.a
+denali_cntl_391     0x4               bsp.a
+sphy_cntl_1021      0x4               bsp.a
+denali_cntl_19      0x4               bsp.a
+denali_cntl_151     0x4               bsp.a
+denali_cntl_581     0x4               bsp.a
+denali_cntl_34      0x4               bsp.a
+sphy_cntl_65        0x4               bsp.a
+sphy_cntl_971       0x4               bsp.a
+denali_cntl_26      0x4               bsp.a
+denali_cntl_27      0x4               bsp.a
+sphy_cntl_701       0x4               bsp.a
+sphy_cntl_75        0x4               bsp.a
+sphy_cntl_69        0x4               bsp.a
+denali_cntl_24      0x4               bsp.a
+show_dbg_message    0x1               bsp.a
+denali_cntl_071     0x4               bsp.a
+denali_cntl_38      0x4               bsp.a
+sphy_cntl_81        0x4               bsp.a
+sphy_cntl_68        0x4               bsp.a
+sphy_cntl_91        0x4               bsp.a
+denali_cntl_14      0x4               bsp.a
+denali_cntl_57      0x4               bsp.a
+denali_cntl_411     0x4               bsp.a
+denali_cntl_101     0x4               bsp.a
+denali_cntl_531     0x4               bsp.a
+sphy_cntl_651       0x4               bsp.a
+sphy_cntl_100       0x4               bsp.a
+sphy_cntl_96        0x4               bsp.a
+denali_cntl_521     0x4               bsp.a
+denali_cntl_48      0x4               bsp.a
+sphy_cntl_721       0x4               bsp.a
+sphy_cntl_71        0x4               bsp.a
+denali_cntl_50      0x4               bsp.a
+denali_cntl_451     0x4               bsp.a
+denali_cntl_37      0x4               bsp.a
+denali_cntl_371     0x4               bsp.a
+denali_cntl_091     0x4               bsp.a
+sphy_cntl_84        0x4               bsp.a
+denali_cntl_301     0x4               bsp.a
+denali_cntl_31      0x4               bsp.a
+sphy_cntl_671       0x4               bsp.a
+denali_cntl_481     0x4               bsp.a
+sphy_cntl_94        0x4               bsp.a
+denali_cntl_07      0x4               bsp.a
+denali_cntl_44      0x4               bsp.a
+denali_cntl_45      0x4               bsp.a
+sphy_cntl_72        0x4               bsp.a
+sphy_cntl_101       0x4               bsp.a
+sphy_cntl_88        0x4               bsp.a
+denali_cntl_181     0x4               bsp.a
+denali_cntl_061     0x4               bsp.a
+denali_cntl_11      0x4               bsp.a
+denali_cntl_54      0x4               bsp.a
+denali_cntl_29      0x4               bsp.a
+sphy_cntl_681       0x4               bsp.a
+denali_cntl_191     0x4               bsp.a
+sphy_cntl_78        0x4               bsp.a
+denali_cntl_42      0x4               bsp.a
+denali_cntl_241     0x4               bsp.a
+denali_cntl_541     0x4               bsp.a
+denali_cntl_111     0x4               bsp.a
+sphy_cntl_1031      0x4               bsp.a
+sphy_cntl_661       0x4               bsp.a
+sphy_cntl_1011      0x4               bsp.a
+sphy_cntl_1001      0x4               bsp.a
+denali_cntl_141     0x4               bsp.a
+denali_cntl_571     0x4               bsp.a
+denali_cntl_32      0x4               bsp.a
+denali_cntl_13      0x4               bsp.a
+denali_cntl_56      0x4               bsp.a
+denali_cntl_471     0x4               bsp.a
+denali_cntl_25      0x4               bsp.a
+denali_cntl_021     0x4               bsp.a
+denali_cntl_341     0x4               bsp.a
+sphy_cntl_102       0x4               bsp.a
+denali_cntl_21      0x4               bsp.a
+sphy_cntl_66        0x4               bsp.a
+denali_cntl_28      0x4               bsp.a
+sys_clk_info        0xc               bsp.a
+denali_cntl_161     0x4               bsp.a
+denali_cntl_591     0x4               bsp.a
+sphy_cntl_711       0x4               bsp.a
+sphy_cntl_76        0x4               bsp.a
+denali_cntl_02      0x4               bsp.a
+sphy_cntl_89        0x4               bsp.a
+sphy_cntl_761       0x4               bsp.a
+denali_cntl_031     0x4               bsp.a
+denali_cntl_17      0x4               bsp.a
+sphy_cntl_90        0x4               bsp.a
+denali_cntl_461     0x4               bsp.a
+denali_cntl_441     0x4               bsp.a
+sphy_cntl_82        0x4               bsp.a
+denali_cntl_171     0x4               bsp.a
+sphy_cntl_98        0x4               bsp.a
+denali_cntl_09      0x4               bsp.a
+denali_cntl_291     0x4               bsp.a
+failed_byte_lane    0x4               bsp.a
+denali_cntl_15      0x4               bsp.a
+denali_cntl_58      0x4               bsp.a
+sphy_cntl_641       0x4               bsp.a
+denali_cntl_511     0x4               bsp.a
+sphy_cntl_92        0x4               bsp.a
+sphy_cntl_70        0x4               bsp.a
+denali_cntl_51      0x4               bsp.a
+denali_cntl_501     0x4               bsp.a
+denali_cntl_081     0x4               bsp.a
+sphy_cntl_97        0x4               bsp.a
+offset_scan         0x80              bsp.a
+sphy_cntl_80        0x4               bsp.a
+denali_cntl_01      0x4               bsp.a
+denali_cntl_47      0x4               bsp.a
+denali_cntl_05      0x4               bsp.a
+denali_cntl_311     0x4               bsp.a
+denali_cntl_051     0x4               bsp.a
+sphy_cntl_85        0x4               bsp.a
+denali_cntl_281     0x4               bsp.a
+denali_cntl_271     0x4               bsp.a
+denali_cntl_201     0x4               bsp.a
+sphy_cntl_771       0x4               bsp.a
+denali_cntl_43      0x4               bsp.a
+denali_cntl_231     0x4               bsp.a
+denali_cntl_331     0x4               bsp.a
+denali_cntl_18      0x4               bsp.a
+denali_cntl_431     0x4               bsp.a
+sphy_cntl_791       0x4               bsp.a
+denali_cntl_10      0x4               bsp.a
+denali_cntl_53      0x4               bsp.a
+denali_cntl_491     0x4               bsp.a
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0xf6a00000         0x00010000
+ram              0xf6200000         0x00008000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x00000000                . = 0x0
+
+startup
+ *(.startup)
+
+prog            0xf6a00000     0x7c80
+ *(.text)
+ .text          0xf6a00000     0x704c bsp.a
+                0xf6a00000                _start
+                0xf6a00040                _end_vect
+                0xf6a00040                uboot_entry
+                0xf6a00044                uboot_image_len
+                0xf6a00048                post_daytona_mem_test_entry
+                0xf6a00050                _armboot_start
+                0xf6a00058                _bss_start
+                0xf6a0005c                _bss_end
+                0xf6a002a0                lowlevel_init
+                0xf6a00618                reset_cpu
+                0xf6a00648                wfi_cpu
+                0xf6a00684                do_help
+                0xf6a00800                do_m
+                0xf6a00824                do_g
+                0xf6a00854                memcpy
+                0xf6a00880                memset
+                0xf6a008a0                post_strlen
+                0xf6a008d8                post_strcmp
+                0xf6a00900                memmove
+                0xf6a00954                parse_prep
+                0xf6a00a9c                data_dump_w
+                0xf6a00ba8                cmd_exe_str
+                0xf6a00c6c                init_cmd_list
+                0xf6a00e08                post_cli
+                0xf6a00f00                post_cmd_in_function
+                0xf6a00fac                _rb_gets
+                0xf6a010f8                run_print_meter
+                0xf6a01174                init_print_meter
+                0xf6a01184                clear_print_meter
+                0xf6a011a4                do_high_load_test_imp
+                0xf6a01424                do_high_load_test_new
+                0xf6a014ec                isupper
+                0xf6a01500                islower
+                0xf6a01514                isdigit
+                0xf6a01528                isspace
+                0xf6a01560                isxdigit
+                0xf6a01590                isalpha
+                0xf6a015b8                tolower
+                0xf6a015c8                iros_strtol
+                0xf6a016a4                serial_put_hex_no_0x
+                0xf6a016d4                serial_put_hex
+                0xf6a016f8                serial_put_binary
+                0xf6a01734                serial_put_decimal
+                0xf6a017d0                user_escape
+                0xf6a01804                get_platform_clk
+                0xf6a01a00                mmu_setup
+                0xf6a01a04                icache_enable
+                0xf6a01a08                icache_disable
+                0xf6a01a0c                icache_status
+                0xf6a01a14                dcache_enable
+                0xf6a01a18                dcache_disable
+                0xf6a01a1c                dcache_status
+                0xf6a01a24                do_show_version
+                0xf6a01a70                do_goto_uboot
+                0xf6a01b90                cs75xx_sdram_init
+                0xf6a01ba0                cs75xx_mem_test
+                0xf6a01be4                wake_up_2nd_cpu
+                0xf6a01cc0                main
+                0xf6a01db4                serial_init
+                0xf6a01e2c                serial_putc
+                0xf6a01e30                serial_puts
+                0xf6a01e4c                serial_getc
+                0xf6a01e74                serial_getc_with_timeout
+                0xf6a01eb8                serial_tstc
+                0xf6a01ed8                serial_setbrg
+                0xf6a01edc                set_timer
+                0xf6a01eec                udelay
+                0xf6a01f44                reset_timer_masked
+                0xf6a01f6c                reset_timer
+                0xf6a01f78                timer_init
+                0xf6a01fb4                get_timer_masked
+                0xf6a02028                get_timer
+                0xf6a0203c                udelay_masked
+                0xf6a02048                get_ticks
+                0xf6a0205c                get_tbclk
+                0xf6a02068                get_bitmask_len
+                0xf6a0209c                sdram_uidiv
+                0xf6a0211c                denali_sdram_cntl_config
+                0xf6a032fc                denali_sdram_phy_config
+                0xf6a033dc                denali_sdram_init_done
+                0xf6a0344c                initialize_lpddr2_s2
+                0xf6a0353c                sdram_pattern_write
+                0xf6a03610                g2_scan_range
+                0xf6a03720                set_denali_16bit_mode
+                0xf6a03790                cpu_read_sdram_mem_32bit
+                0xf6a03804                cpu_read_check_sdram_mem
+                0xf6a03cb8                denali_sdram_train_rd_strobe
+                0xf6a040f8                restart_dll_lock
+                0xf6a042c8                force_zq_pmos_nmos
+                0xf6a04378                restart_zq_calibration
+                0xf6a045f0                denali_sdram_train_rd_latency
+                0xf6a0483c                denali_sdram_train_gateo
+                0xf6a04c74                denali_sdram_train_wr_data_chk
+                0xf6a04d3c                write_sdram_mem
+                0xf6a04e08                denali_sdram_train_wr_data_offset
+                0xf6a05038                denali_sdram_train_wr_data
+                0xf6a0548c                denali_sdram_size
+                0xf6a05df8                set_ddr_freq
+                0xf6a05fc0                denali_sdramdriver_set_default_conf
+                0xf6a06018                g2_ddr_freq
+                0xf6a0603c                g2_eye_loop
+                0xf6a06218                g2_reg_wr
+                0xf6a062e0                g2_ddr_reg_init
+                0xf6a06324                g2_ddr_start
+                0xf6a06348                g2_ddr_start_and_train
+                0xf6a06384                denali_sdramdriver_initialize
+                0xf6a06398                g2_wr_ddr_pat
+                0xf6a063a8                g2_tr_rd
+                0xf6a064f8                g2_tr_lat
+                0xf6a065e0                g2_tr_gat
+                0xf6a0673c                g2_tr_wr
+                0xf6a06898                g2_ddr_size
+                0xf6a06938                g2_ddr_rst
+                0xf6a06a18                print_saved_reg
+                0xf6a06ad0                g2_long_test1
+                0xf6a06b98                g2_start_zq
+                0xf6a06c6c                g2_force_zq
+                0xf6a06cf8                g2_start_dll
+                0xf6a06dcc                g2_dbg_on
+                0xf6a06e00                g2_ddr_set_default_conf
+                0xf6a06e64                g2_start_init
+                0xf6a06ec8                _exception_handlers
+                0xf6a07040                _exception_handlers_end
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.4
+                0xf6a0704c      0xc34 bsp.a
+                                0xc60 (size before relaxing)
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+                0xf6a07c80                __end_of_text__ = .
+
+.vfp11_veneer   0xf6a07c80        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0xf6a07c80        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.data           0xf6200000        0x0
+                0xf6200000                __data_beg__ = .
+                0xf6a07c80                __data_beg_src__ = __end_of_text__
+ *(.data)
+ .data          0xf6200000        0x0 bsp.a
+                0xf6200000                __data_end__ = .
+
+.bss            0xf6200000     0x16bc
+                0xf6200000                __bss_beg__ = .
+ *(.bss)
+ .bss           0xf6200000     0x1360 bsp.a
+                0xf6201358                ddr_freq
+                0xf620135c                detected_16bit_mode
+                0xf620135d                display_all
+ COMMON         0xf6201360      0x35c bsp.a
+                0xf6201360                sphy_cntl_95
+                0xf6201364                denali_cntl_40
+                0xf6201368                sphy_cntl_64
+                0xf620136c                denali_cntl_46
+                0xf6201370                denali_cntl_121
+                0xf6201374                denali_cntl_551
+                0xf6201378                sphy_cntl_103
+                0xf620137c                sphy_cntl_74
+                0xf6201380                sphy_cntl_781
+                0xf6201384                denali_cntl_251
+                0xf6201388                denali_cntl_35
+                0xf620138c                sphy_cntl_79
+                0xf6201390                denali_cntl_23
+                0xf6201394                denali_cntl_131
+                0xf6201398                denali_cntl_561
+                0xf620139c                denali_cntl_20
+                0xf62013a0                denali_cntl_33
+                0xf62013a4                sphy_cntl_67
+                0xf62013a8                sphy_cntl_691
+                0xf62013ac                denali_cntl_39
+                0xf62013b0                denali_cntl_03
+                0xf62013b4                denali_cntl_22
+                0xf62013b8                loop_check_cnt
+                0xf62013bc                denali_cntl_16
+                0xf62013c0                denali_cntl_59
+                0xf62013c4                sphy_cntl_77
+                0xf62013c8                denali_cntl_041
+                0xf62013cc                denali_cntl_49
+                0xf62013d0                denali_cntl_08
+                0xf62013d4                denali_cntl_401
+                0xf62013d8                sphy_cntl_83
+                0xf62013dc                denali_cntl_011
+                0xf62013e0                denali_cntl_30
+                0xf62013e4                denali_cntl_36
+                0xf62013e8                denali_cntl_00
+                0xf62013ec                denali_cntl_321
+                0xf62013f0                denali_cntl_381
+                0xf62013f4                sphy_cntl_93
+                0xf62013f8                denali_cntl_04
+                0xf62013fc                denali_cntl_06
+                0xf6201400                denali_cntl_52
+                0xf6201404                sphy_cntl_87
+                0xf6201408                denali_cntl_001
+                0xf620140c                denali_cntl_361
+                0xf6201410                show_type
+                0xf6201414                denali_cntl_421
+                0xf6201418                denali_cntl_41
+                0xf620141c                sphy_cntl_86
+                0xf6201420                denali_cntl_211
+                0xf6201424                denali_cntl_221
+                0xf6201428                denali_cntl_261
+                0xf620142c                denali_cntl_351
+                0xf6201430                denali_cntl_12
+                0xf6201434                denali_cntl_55
+                0xf6201438                denali_cntl_391
+                0xf620143c                sphy_cntl_1021
+                0xf6201440                denali_cntl_19
+                0xf6201444                denali_cntl_151
+                0xf6201448                denali_cntl_581
+                0xf620144c                denali_cntl_34
+                0xf6201450                sphy_cntl_65
+                0xf6201454                sphy_cntl_971
+                0xf6201458                denali_cntl_26
+                0xf620145c                denali_cntl_27
+                0xf6201460                sphy_cntl_701
+                0xf6201464                sphy_cntl_75
+                0xf6201468                sphy_cntl_69
+                0xf620146c                denali_cntl_24
+                0xf6201470                show_dbg_message
+                0xf6201474                denali_cntl_071
+                0xf6201478                denali_cntl_38
+                0xf620147c                sphy_cntl_81
+                0xf6201480                sphy_cntl_68
+                0xf6201484                sphy_cntl_91
+                0xf6201488                denali_cntl_14
+                0xf620148c                denali_cntl_57
+                0xf6201490                denali_cntl_411
+                0xf6201494                denali_cntl_101
+                0xf6201498                denali_cntl_531
+                0xf620149c                sphy_cntl_651
+                0xf62014a0                sphy_cntl_100
+                0xf62014a4                sphy_cntl_96
+                0xf62014a8                denali_cntl_521
+                0xf62014ac                denali_cntl_48
+                0xf62014b0                sphy_cntl_721
+                0xf62014b4                sphy_cntl_71
+                0xf62014b8                denali_cntl_50
+                0xf62014bc                denali_cntl_451
+                0xf62014c0                denali_cntl_37
+                0xf62014c4                denali_cntl_371
+                0xf62014c8                denali_cntl_091
+                0xf62014cc                sphy_cntl_84
+                0xf62014d0                denali_cntl_301
+                0xf62014d4                denali_cntl_31
+                0xf62014d8                sphy_cntl_671
+                0xf62014dc                denali_cntl_481
+                0xf62014e0                sphy_cntl_94
+                0xf62014e4                denali_cntl_07
+                0xf62014e8                denali_cntl_44
+                0xf62014ec                denali_cntl_45
+                0xf62014f0                sphy_cntl_72
+                0xf62014f4                sphy_cntl_101
+                0xf62014f8                sphy_cntl_88
+                0xf62014fc                denali_cntl_181
+                0xf6201500                denali_cntl_061
+                0xf6201504                denali_cntl_11
+                0xf6201508                denali_cntl_54
+                0xf620150c                denali_cntl_29
+                0xf6201510                sphy_cntl_681
+                0xf6201514                denali_cntl_191
+                0xf6201518                sphy_cntl_78
+                0xf620151c                denali_cntl_42
+                0xf6201520                denali_cntl_241
+                0xf6201524                denali_cntl_541
+                0xf6201528                denali_cntl_111
+                0xf620152c                sphy_cntl_1031
+                0xf6201530                sphy_cntl_661
+                0xf6201534                sphy_cntl_1011
+                0xf6201538                sphy_cntl_1001
+                0xf620153c                denali_cntl_141
+                0xf6201540                denali_cntl_571
+                0xf6201544                denali_cntl_32
+                0xf6201548                denali_cntl_13
+                0xf620154c                denali_cntl_56
+                0xf6201550                denali_cntl_471
+                0xf6201554                denali_cntl_25
+                0xf6201558                denali_cntl_021
+                0xf620155c                denali_cntl_341
+                0xf6201560                sphy_cntl_102
+                0xf6201564                denali_cntl_21
+                0xf6201568                sphy_cntl_66
+                0xf620156c                denali_cntl_28
+                0xf6201570                sys_clk_info
+                0xf620157c                denali_cntl_161
+                0xf6201580                denali_cntl_591
+                0xf6201584                sphy_cntl_711
+                0xf6201588                sphy_cntl_76
+                0xf620158c                denali_cntl_02
+                0xf6201590                sphy_cntl_89
+                0xf6201594                sphy_cntl_761
+                0xf6201598                denali_cntl_031
+                0xf620159c                denali_cntl_17
+                0xf62015a0                sphy_cntl_90
+                0xf62015a4                denali_cntl_461
+                0xf62015a8                denali_cntl_441
+                0xf62015ac                sphy_cntl_82
+                0xf62015b0                denali_cntl_171
+                0xf62015b4                sphy_cntl_98
+                0xf62015b8                denali_cntl_09
+                0xf62015bc                denali_cntl_291
+                0xf62015c0                failed_byte_lane
+                0xf62015c4                denali_cntl_15
+                0xf62015c8                denali_cntl_58
+                0xf62015cc                sphy_cntl_641
+                0xf62015d0                denali_cntl_511
+                0xf62015d4                sphy_cntl_92
+                0xf62015d8                sphy_cntl_70
+                0xf62015dc                denali_cntl_51
+                0xf62015e0                denali_cntl_501
+                0xf62015e4                denali_cntl_081
+                0xf62015e8                sphy_cntl_97
+                0xf62015ec                offset_scan
+                0xf620166c                sphy_cntl_80
+                0xf6201670                denali_cntl_01
+                0xf6201674                denali_cntl_47
+                0xf6201678                denali_cntl_05
+                0xf620167c                denali_cntl_311
+                0xf6201680                denali_cntl_051
+                0xf6201684                sphy_cntl_85
+                0xf6201688                denali_cntl_281
+                0xf620168c                denali_cntl_271
+                0xf6201690                denali_cntl_201
+                0xf6201694                sphy_cntl_771
+                0xf6201698                denali_cntl_43
+                0xf620169c                denali_cntl_231
+                0xf62016a0                denali_cntl_331
+                0xf62016a4                denali_cntl_18
+                0xf62016a8                denali_cntl_431
+                0xf62016ac                sphy_cntl_791
+                0xf62016b0                denali_cntl_10
+                0xf62016b4                denali_cntl_53
+                0xf62016b8                denali_cntl_491
+                0xf62016bc                . = ALIGN (0x4)
+                0xf62016bc                . = ALIGN (0x4)
+                0xf62016bc                _end = .
+                0xf62016bc                _bss_end__ = .
+                0xf62016bc                __bss_end__ = .
+                0xf62016bc                __end__ = .
+                0xf62016bc                PROVIDE (end, .)
+LOAD bsp.a
+OUTPUT(post.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x29
+ .ARM.attributes
+                0x00000000       0x29 bsp.a
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 bsp.a
+
+.comment        0x00000000       0x3b
+ .comment       0x00000000       0x3b bsp.a
+                                0x2d0 (size before relaxing)
+
+.debug_aranges  0x00000000      0x180
+ .debug_aranges
+                0x00000000      0x180 bsp.a
+
+.debug_pubnames
+                0x00000000     0x1690
+ .debug_pubnames
+                0x00000000     0x1690 bsp.a
+
+.debug_info     0x00000000     0x9b66
+ .debug_info    0x00000000     0x9b66 bsp.a
+
+.debug_abbrev   0x00000000      0xdf5
+ .debug_abbrev  0x00000000      0xdf5 bsp.a
+
+.debug_line     0x00000000     0x120e
+ .debug_line    0x00000000     0x120e bsp.a
+
+.debug_frame    0x00000000      0xc48
+ .debug_frame   0x00000000      0xc48 bsp.a
+
+.debug_str      0x00000000     0x33e2
+ .debug_str     0x00000000     0x33e2 bsp.a
+                               0x3e4d (size before relaxing)
+
+.debug_loc      0x00000000     0x3aae
+ .debug_loc     0x00000000     0x3aae bsp.a
+
+.debug_pubtypes
+                0x00000000      0x10f
+ .debug_pubtypes
+                0x00000000      0x10f bsp.a
+
+.debug_ranges   0x00000000       0x18
+ .debug_ranges  0x00000000       0x18 bsp.a
